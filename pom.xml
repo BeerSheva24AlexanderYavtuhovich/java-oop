@@ -21,6 +21,10 @@
             <version>5.10.3</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>telran.util</groupId>
+            <artifactId>arrays</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>
