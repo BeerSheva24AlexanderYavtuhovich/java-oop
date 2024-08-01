@@ -3,27 +3,29 @@ package telran.shapes;
 public class Canvas implements Shape {
     Shape[] shapes;
 
-    // any shape
     public Canvas() {
         shapes = new Shape[0];
     }
 
     void addShape(Shape shape) {
-        // TODO
+        shapes = telran.util.Arrays.insert(shapes, shapes.length, shape);
     }
 
     @Override
     public int perimetr() {
-        // TODO
-        // sum of all included shape perimeters
-        throw new UnsupportedOperationException("Unimplemented method 'perimetr'");
+        int total = 0;
+        for (Shape shape : shapes)
+            total += shape.perimetr();
+        return total;
     }
 
     @Override
     public int square() {
-        // TODO
-        /// sum of all included shape squares
-        throw new UnsupportedOperationException("Unimplemented method 'square'");
+        int total = 0;
+        for (Shape shape : shapes) {
+            total += shape.square();
+        }
+        return total;
     }
 
 }
