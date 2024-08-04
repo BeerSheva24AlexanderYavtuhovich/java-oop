@@ -1,3 +1,3 @@
-# HW12 - Canvas solution
+# HW13 - Count shapes solution
 ## Testing:
-![alt text](image.png)
+![alt text](image-1.png)

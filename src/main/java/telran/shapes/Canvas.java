@@ -39,4 +39,5 @@ public class Canvas implements Shape {
         }
         return counter;
     }
+
 }
