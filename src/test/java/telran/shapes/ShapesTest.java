@@ -65,7 +65,7 @@ public class ShapesTest {
     canvas.addShape(square);
     canvas.addShape(canvasLevel1);
 
-    int expectedCount = 6;
+    int expectedCount = 8;
 
     assertEquals(expectedCount, canvas.count());
   }
